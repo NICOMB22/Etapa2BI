@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Análisis de ODS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Predicción de ODS</h1>
+    </header>
+    <main>
+      <p>
+        Determina el ODS para el archivo CSV ingresado utilizando un modelo
+        Random Forest con un vectorizador TF-IDF.
+      </p>
+
+      <p class="p-warning">
+        Se necesita que el archivo ingresado cuente con una columna llamada "Texto_espanol".
+      </p>
+
+      <div class="form-container">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+          <label for="csv_file">Cargar archivo CSV:</label>
+          <input type="file" name="csv_file" accept=".csv" />
+          <input type="submit" value="Predecir" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

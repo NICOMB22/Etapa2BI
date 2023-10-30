@@ -1,0 +1,97 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body {
+  padding: 20px;
+}
+
+.form-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.prediction {
+  text-align: center;
+}
+
+.p-warning {
+  color: red;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #094175;
+  color: #fff;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
+form label {
+  font-weight: 500;
+  margin-top: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+form textarea {
+  height: 160px;
+  width: 100%;
+  resize: none;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+form textarea:focus {
+  background-color: #fff;
+}
+
+form input[type="submit"] {
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #094175;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #4F5D75;
+}
+
+form input[type="submit"]:focus {
+  outline: none;
+}
+
+/* Prediction */
+main p {
+  margin-top: 32px;
+  font-size: 18px;
+  color: #333;
+}
